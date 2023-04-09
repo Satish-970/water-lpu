@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			background-image:url("https://qph.cf2.quoracdn.net/main-qimg-61606e5c55013398574ffeedea1309e5-pjlq");
+    background-size:cover;}
+		h1 {
+			text-align: center;
+			color: #000000;
+		}
+		form {
+			
+			width: 50%;
+			margin: auto;
+			padding: 20px;
+		
+		}
+		input[type=text], input[type=password] {
+			width: 50%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #15e0b4;
+			color:#000000;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 50%;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+		.imgcontainer {
+		
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+		.container {
+			padding: 16px;
+		}
+		span.psw {
+            
+			float: right;
+			padding-top: 16px;
+		}
+		@media screen and (max-width: 300px) {
+			span.psw {
+				display: block;
+				float: none;
+			}
+			.cancelbtn {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Login Form</h1>
+    <form id="myForm">
+        <form action="/action_page.php">
+            <div class="imgcontainer">
+            </div>
+            <div class="container">
+                <label for="uname"><b><h2>Username</h2></b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                <label for="psw"><b><h2>Password</h2></b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+    <br><br>
+    <button onclick="window.location.href='file:///C:/Users/Satish%20pakalapati/OneDrive/Desktop/CHE%20110%20web/Dashboard.html'">Login</button>
+	<button onclick="window.location.href='file:///C:/Users/Satish%20pakalapati/OneDrive/Desktop/SEM-1/physics/python/html/sign%20up.html'">No Account ?</button>
+	<label>
+                    <br><input type="checkbox" checked="checked" name="remember"> <b>Remember me</b>
+                </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button onclick="resetForm()"class="cancelbtn">Clear Form</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+      </form>
+      
+      <script>
+      function resetForm() {
+        document.getElementById("myForm").reset();
+      }
+      </script>
+</body>
+</html>
